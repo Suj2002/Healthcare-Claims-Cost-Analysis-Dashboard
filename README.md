@@ -13,7 +13,7 @@ Based on datasets and analysis, we should answer the following executive questio
 4.	How do billed amounts compare to paid amounts?
 
 ## Dataset Description
-The project and datasets are originally from Analyst builder: https://www.analystbuilder.com/projects/healthcare-claims-where-is-the-money-going-TVHLQ.\
+The project and datasets are originally from Analyst builder: https://www.analystbuilder.com/projects/healthcare-claims-where-is-the-money-going-TVHLQ.\\
 There are two datasets/tables given in csv format, ‘members’ and ‘claims’, including member demographics, claim types (inpatient, outpatient, ER, pharmacy), diagnosis codes (ICD), procedure codes (CPT), billed amounts, and paid amounts.
 
 ## Tech Stack
@@ -22,11 +22,11 @@ There are two datasets/tables given in csv format, ‘members’ and ‘claims�
 •	Power BI: Creating Dashboard 
 
 ## Data Preparation
-The original datasets were preserved in raw format. Data inspection and cleaning were performed on duplicated working files to maintain data integrity and reproducibility.\
-Using excel, we ensure that there are no NA or missing values, duplicated observations and blank column and rows in both two tables.\
-Also, we created two pivot tables to summarize the insights and trend from a general overview.\
+The original datasets were preserved in raw format. Data inspection and cleaning were performed on duplicated working files to maintain data integrity and reproducibility.\\
+Using excel, we ensure that there are no NA or missing values, duplicated observations and blank column and rows in both two tables.\\
+Also, we created two pivot tables to summarize the insights and trend from a general overview.\\
 For table ‘members’, we can see there are totaling 100 members in records, and the pivotable shows the number of members and average of members’ age across plan types and genders.
-<img width="975" height="439" alt="image" src="https://github.com/user-attachments/assets/d54da340-fe7d-40fb-82d2-20177ce6190e" /> \
+<img width="975" height="439" alt="image" src="https://github.com/user-attachments/assets/d54da340-fe7d-40fb-82d2-20177ce6190e" /> \\
 For table ‘claims’, the pivot tables there are totaling 449 claims in the record. Also, it showcases the number of claims, sum of billed amount and paid amount across different claim types.
- <img width="955" height="277" alt="image" src="https://github.com/user-attachments/assets/844d9e4f-58e5-45d0-8dff-f76b362d2b43" /> \
+ <img width="955" height="277" alt="image" src="https://github.com/user-attachments/assets/844d9e4f-58e5-45d0-8dff-f76b362d2b43" /> \\
 In addition, both of two tables have member_id column, and this could be viewed as key to join these two together in the further analysis using SQL.
