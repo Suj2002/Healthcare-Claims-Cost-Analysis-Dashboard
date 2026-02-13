@@ -2,39 +2,48 @@
 Analyzed healthcare claims data to determine which claim types are most expensive, which CPT and ICD codes drive spending, which members account for the highest costs, and how billed amounts compare to paid amounts through SQL and Power BI dashboards.
 
 ## Healthcare Claims - Where Is the Money Going?
-This time we played a role as a Data Analyst for a health insurance company to figure out the reasons behind losing money. 
-In this simulated project, we’ve been given synthetic claims datasets. Our goal is to break down healthcare spending to understand which services, procedures, and members drive the highest costs for C-Level Executives and the company to try to become profitable again.
+In this project, I assumed the role of a Data Analyst at a health insurance company tasked with investigating the drivers behind rising claim costs and declining profitability.
+
+Using a synthetic healthcare claims dataset, the objective was to analyze healthcare spending patterns and identify which services, procedures, and members contribute most significantly to overall costs. 
+
+The final deliverable was designed to support C-level executives in understanding financial leakage and improving cost management strategies.
+
 
 ## Business Questions
-Based on datasets and analysis, we should answer the following executive questions:
+Based on datasets and analysis, the project aimed to answer the following executive-level questions:
 1.	Which claim types are the most expensive?
 2.	Which CPT and ICD codes drive the highest spending?
 3.	Which members account for the largest share of total costs?
 4.	How do billed amounts compare to paid amounts?
 
 ## Dataset Description
-The project and datasets are originally from Analyst builder: https://www.analystbuilder.com/projects/healthcare-claims-where-is-the-money-going-TVHLQ.
+The project and datasets were sourced from Analyst Builder: https://www.analystbuilder.com/projects/healthcare-claims-where-is-the-money-going-TVHLQ
 
-There are two datasets/tables given in csv format, ‘members’ and ‘claims’, including member demographics, claim types (inpatient, outpatient, ER, pharmacy), diagnosis codes (ICD), procedure codes (CPT), billed amounts, and paid amounts.
+Two datasets were provided in CSV format:
+•	Members: member demographics and plan information\
+•	Claims: claim records including claim types (Inpatient, Outpatient, ER, Pharmacy), CPT procedure codes, ICD diagnosis codes, billed amounts, and paid amounts
+
+Each row in the Claims dataset represents an individual healthcare claim.
+
 
 ## Tech Stack
-•	Excel: Initial Review for Data and Light Cleaning \
-•	SQL: Analysis and Aggregations \
-•	Power BI: Creating Dashboard 
+•	Excel: Initial Data Review and Light Cleaning \
+•	SQL: Data Aggregation and Cost Analysis \
+•	Power BI: Dashboard Development
 
 ## Data Preparation
 The original datasets were preserved in raw format. Data inspection and cleaning were performed on duplicated working files to maintain data integrity and reproducibility.
 
-Using excel, we ensure that there are no NA or missing values, duplicated observations and blank column and rows in both two tables.
+Using Excel, initial data validation was conducted to ensure there were no missing values, duplicate observations, or blank rows and columns across both tables.
 
-Also, we created two pivot tables to summarize the insights and trend from a general overview.
+Two pivot tables were created to provide a high-level overview of the data.
 
-For table ‘members’, we can see there are totaling 100 members in records, and the pivotable shows the number of members and average of members’ age across plan types and genders.
+For the Members table, a total of 100 members were identified. The pivot table summarized member counts and average age across plan types and gender categories.
 
 <img width="975" height="439" alt="image" src="https://github.com/user-attachments/assets/d54da340-fe7d-40fb-82d2-20177ce6190e" /> 
 
-For table ‘claims’, the pivot tables there are totaling 449 claims in the record. Also, it showcases the number of claims, sum of billed amount and paid amount across different claim types.
+For the Claims table, 449 claims were recorded. The pivot table summarized claim volumes, total billed amounts, and total paid amounts across different claim types.
 
  <img width="955" height="277" alt="image" src="https://github.com/user-attachments/assets/844d9e4f-58e5-45d0-8dff-f76b362d2b43" /> 
  
-In addition, both of two tables have member_id column, and this could be viewed as key to join these two together in the further analysis using SQL.
+Both tables contained a member_id field, which would be served as the key for joining the datasets in subsequent SQL analysis.
