@@ -35,6 +35,6 @@ For table ‘members’, we can see there are totaling 100 members in records, a
 
 For table ‘claims’, the pivot tables there are totaling 449 claims in the record. Also, it showcases the number of claims, sum of billed amount and paid amount across different claim types.
 
- <img width="955" height="277" alt="image" src="https://github.com/user-attachments/assets/844d9e4f-58e5-45d0-8dff-f76b362d2b43" /> \
+ <img width="955" height="277" alt="image" src="https://github.com/user-attachments/assets/844d9e4f-58e5-45d0-8dff-f76b362d2b43" /> 
  
 In addition, both of two tables have member_id column, and this could be viewed as key to join these two together in the further analysis using SQL.
