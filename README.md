@@ -34,7 +34,7 @@ Each row in the Claims dataset represents an individual healthcare claim.
 ## Data Preparation
 The original datasets were preserved in raw format. Data inspection and cleaning were performed on duplicated working files to maintain data integrity and reproducibility.
 
-Using Excel, initial data validation was conducted to ensure there were no missing values, inconsistent values and columns, duplicate observations, or blank rows and columns across both tables.
+Using Excel, initial data validation was conducted to check missing values, inconsistent values and columns, duplicate observations, or blank rows and columns across both tables.
 
 Two pivot tables were created to provide a high-level overview of the data.
 
