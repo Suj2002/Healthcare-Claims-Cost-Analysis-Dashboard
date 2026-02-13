@@ -19,7 +19,7 @@ Based on datasets and analysis, the project aimed to answer the following execut
 ## Dataset Description
 The project and datasets were sourced from Analyst Builder: https://www.analystbuilder.com/projects/healthcare-claims-where-is-the-money-going-TVHLQ
 
-Two datasets were provided in CSV format:
+Two datasets were provided in CSV format:\
 •	Members: member demographics and plan information\
 •	Claims: claim records including claim types (Inpatient, Outpatient, ER, Pharmacy), CPT procedure codes, ICD diagnosis codes, billed amounts, and paid amounts
 
