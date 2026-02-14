@@ -57,11 +57,35 @@ Group all claims by claim_type and calculate:
 
 Then rank all claim types from most expensive to least expensive based on total paid amount.
 
-SELECT claim_type,\
-       SUM(billed_amount) AS total_billed_amount,\
-       SUM(paid_amount) AS total_paid_amount,\
-	   COUNT(*) AS number_of_claims\
-FROM claims_working\
-GROUP BY claim_type\
-ORDER BY total_paid_amount DESC;\
-	   
+### 2. CPT & ICD Cost Drivers
+Find the top 10 CPT codes by total paid amount.
+
+Find the top 10 ICD codes by total paid amount.
+
+Identify CPT codes with a high paid amount per claim by calculating:
+
+average_paid_per_claim = total_paid_amount ÷ claim_count
+
+This will tell you which procedures are most expensive.
+
+### 3. Member-Level Analysis
+Calculate total paid amount per member.
+
+Identify the top 5–10 highest-cost members.
+
+For each high-cost member, break down which claim types (inpatient, outpatient, ER, pharmacy) drive their costs.
+
+### 4. Billed vs Paid Ratio
+Calculate:
+
+1. paid_ratio = paid_amount ÷ billed_amount
+
+Then compare average paid ratios by:
+
+1. claim_type
+
+2. provider
+
+3. CPT code
+
+Look for claim types where the insurer pays significantly less or significantly more than the billed amount.
