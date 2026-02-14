@@ -57,11 +57,11 @@ Group all claims by claim_type and calculate:
 
 Then rank all claim types from most expensive to least expensive based on total paid amount.
 
-SELECT claim_type,
-       SUM(billed_amount) AS total_billed_amount,
-       SUM(paid_amount) AS total_paid_amount,
-	   COUNT(*) AS number_of_claims
-FROM claims_working
-GROUP BY claim_type
-ORDER BY total_paid_amount DESC;
+SELECT claim_type,\
+       SUM(billed_amount) AS total_billed_amount,\
+       SUM(paid_amount) AS total_paid_amount,\
+	   COUNT(*) AS number_of_claims\
+FROM claims_working\
+GROUP BY claim_type\
+ORDER BY total_paid_amount DESC;\
 	   
