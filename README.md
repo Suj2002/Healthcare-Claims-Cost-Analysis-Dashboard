@@ -47,3 +47,21 @@ For the Claims table, 449 claims were recorded. The pivot table summarized claim
  <img width="955" height="277" alt="image" src="https://github.com/user-attachments/assets/844d9e4f-58e5-45d0-8dff-f76b362d2b43" /> 
  
 Both tables contained a member_id field, which would be served as the key for joining the datasets in subsequent SQL analysis.
+
+## Analysis Approach
+### 1. Claim Type Cost Breakdown
+Group all claims by claim_type and calculate:
+1. Total billed_amount
+2. Total paid_amount
+3. Number of claims
+
+Then rank all claim types from most expensive to least expensive based on total paid amount.
+
+SELECT claim_type,
+       SUM(billed_amount) AS total_billed_amount,
+       SUM(paid_amount) AS total_paid_amount,
+	   COUNT(*) AS number_of_claims
+FROM claims_working
+GROUP BY claim_type
+ORDER BY total_paid_amount DESC;
+	   
