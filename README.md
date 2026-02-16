@@ -57,6 +57,23 @@ Group all claims by claim_type and calculate:
 
 Then rank all claim types from most expensive to least expensive based on total paid amount.
 
+```sql
+SELECT claim_type,
+       SUM(billed_amount) AS total_billed_amount,
+       SUM(paid_amount) AS total_paid_amount,
+	   COUNT(*) AS number_of_claims
+FROM claims_working
+GROUP BY claim_type
+ORDER BY total_paid_amount DESC;
+```
+| claim type | total billed amount | total paid amount | number of claims|
+| Inpatient	| 1478601.25	| 1092456.0	| 99 |
+| Emergency	| 384241.55	| 294441.36	| 88 |
+| Outpatient |	160717.75	| 129052.75	| 105 |
+| Lab	| 25789.9	| 23412.35	| 76 |
+| Pharmacy	| 12814.6	| 11382.45	| 81 |
+
+
 ### 2. CPT & ICD Cost Drivers
 Find the top 10 CPT codes by total paid amount.
 
