@@ -66,15 +66,15 @@ FROM claims_working
 GROUP BY claim_type
 ORDER BY total_paid_amount DESC;
 ```
-```markdown
+
 | claim type | total billed amount | total paid amount | number of claims|
-| --- | --- | --- | --- |
-| Inpatient	| 1478601.25	| 1092456.0	| 99 |
-| Emergency	| 384241.55	| 294441.36	| 88 |
-| Outpatient |	160717.75	| 129052.75	| 105 |
-| Lab	| 25789.9	| 23412.35	| 76 |
-| Pharmacy	| 12814.6	| 11382.45	| 81 |
-```
+| ---------- | ------------------- | ----------------- | --------------- |
+| Inpatient	 | 1478601.25      	   | 1092456.0	       | 99 |
+| Emergency  | 384241.55	       | 294441.36	       | 88 |
+| Outpatient | 160717.75	       | 129052.75	       | 105|
+| Lab	     | 25789.9	           | 23412.35	       | 76 |
+| Pharmacy 	 | 12814.6	           | 11382.45	       | 81 |
+ 
 
 
 ### 2. CPT & ICD Cost Drivers
