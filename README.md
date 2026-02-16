@@ -67,6 +67,7 @@ GROUP BY claim_type
 ORDER BY total_paid_amount DESC;
 ```
 | claim type | total billed amount | total paid amount | number of claims|
+| --- | --- | --- | --- |
 | Inpatient	| 1478601.25	| 1092456.0	| 99 |
 | Emergency	| 384241.55	| 294441.36	| 88 |
 | Outpatient |	160717.75	| 129052.75	| 105 |
