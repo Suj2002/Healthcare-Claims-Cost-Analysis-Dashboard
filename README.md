@@ -155,7 +155,8 @@ Finally Look for claim types where the insurer pays significantly less or signif
 Comparing all the claim types, claim type 'Inpatient' has the least paid ratio, and 'Lab' has the highest measure. Viewing in general, there are no claim types where the insurer the insurer pays significantly less or significantly more than the billed amount. We will break down this part in the dashboard.
 
 ## Dashboard (Using Power BI)
-<img width="1406" height="793" alt="healthcare1 2026-02-17 5_57_18 PM" src="https://github.com/user-attachments/assets/12a3427e-a269-405d-a27e-082dc2c66eaa" />
+<img width="1155" height="646" alt="healthcare1 2026-02-17 6_05_36 PM" src="https://github.com/user-attachments/assets/6d56cb59-d91d-4cbd-a4c0-eb0c5e821080" />
+
 
 <img width="1412" height="788" alt="healthcare1 2026-02-17 5_57_27 PM" src="https://github.com/user-attachments/assets/0dcadd02-d70f-4a22-85a4-e0141923a69c" />
 
